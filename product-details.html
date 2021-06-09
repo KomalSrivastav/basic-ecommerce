@@ -101,7 +101,11 @@
 	  <div class="col-lg-6">
 	     <div id="Gallery">  
 			<ul>
-			<li><img src="images/a53s-5g-cph2321-oppo-original-imag2gwzmunrmur8.jpeg" class="small_img" style="width:70px; height:70px;"></li>
+			<li>
+			<h1>Easing Zoom Example</h1>
+<img id="zoom_10" src='images/MI.png' data-zoom-image="images/MI.png"/>
+			
+			<img src="images/a53s-5g-cph2321-oppo-original-imag2gwzmunrmur8.jpeg" class="small_img" style="width:70px; height:70px;"></li>
 			<li><img src="images/MI.png" class="small_img"style="width:70px; height:70px;"></li>
 			<li><img src="images/gionee_s11_gylite.jpg" class="small_img"style="width:70px; height:70px;"></li>
 			<li><img src="images/07.jpg" class="small_img"style="width:70px; height:70px;"></li>
@@ -985,6 +989,7 @@ $(document).ready(function(){
      $(".big_img").attr('src',$(this).attr('src'));
 	 
 	 });
+	 $("#zoom_10").elevateZoom({easing : true});
 	 
 	 $(".big_img").elevateZoom({
  easing : true
