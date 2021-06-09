@@ -6,10 +6,9 @@
 @importurl('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 body   {
 font-family: Roboto,Arial,sans-serif;
-background-color:#f4f4f4!important;
 max-width: 100%;
 overflow-x: hidden;
-font-size: 14px!important;
+font-size:14px!important;
 }
 a:hover;{
 }
@@ -34,7 +33,7 @@ a:hover;{
     width: 90%;
     padding-left: 0!important;
     padding-right: 0!important;
-    text-align: center;
+		
 }
 #cont h5{
 	color:#fff;
@@ -44,6 +43,7 @@ a:hover;{
   font-size: 16px;
   text-align: center;
   text-decoration: none!impo;
+  padding-left: 17px;
 }	
 .dropdown {
   float: left;
@@ -604,14 +604,12 @@ footer.bg-success {
     margin-top: 0;
     margin-bottom: 18px;
 }	
-.form-control {
-	padding: 4px 49px!important;
-}
 .u-section-2 {
      
 	 
 	   
 }
+
 .u-section-2 .u-slider-1 {
   min-height: 305px;
   margin-top: 0;
@@ -625,7 +623,7 @@ footer.bg-success {
   bottom: 40px;
 }
 .u-section-2 .u-image-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/istockphoto-1198460712-1980x356.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/sunglass_category_banner_1_1400x.jpg");
   background-position: 50% 50%;
 }
 
@@ -637,7 +635,7 @@ footer.bg-success {
 }
 
 .u-section-2 .u-image-2 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/Sale-Banner-1980-x-356-FINAL.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/Sale-Banner-1349-x-350-FINAL.jpg");
   background-position: 50% 50%;
 }
 .u-section-2 .u-container-layout-3 {
