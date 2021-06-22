@@ -24,4 +24,12 @@
               $("#st1, #st2, #st3, #st4, #st5").css("color", "#fb641b");
 
           });
+  jQuery("#product-caption-slider li").click(function(){
+     var x = jQuery(this).attr("data-target");
+	 jQuery("#zoom-anchor").attr("href",x);
+	 jQuery("#zoom-image").attr("src",x);
+	 //jQuery("#zoom-anchor").attr("href",x);
+	 //jQuery("#zoom-image").attr("src",x);
+	 $('.easyzoom').easyZoom();
+  });
         });
