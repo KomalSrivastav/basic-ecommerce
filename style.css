@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
-
 *{
-    box-sizing: border-box;
+	box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-body   {
+body{
 font-family: 'Poppins', sans-serif;
-font-size: 14px !important;;
-line-height: 20px!important;
-
+font-size: 14px !important;
 overflow-x: hidden;
 
 }
@@ -18,18 +14,15 @@ button{
 	border:none;
 	box-shadow:0 4px 6px 0 rgba(0,0,0,0.12);	
 }
-#Buy{
+#Buy,.Add{
 background-color:#ff9f00;
-font-weight:bold;
+font-weight:700;
 font-size:18px;
-color: azure;
- 
+color:#fff;
+background-color:#ff9f00;
 }
 .Add{
-	background-color:#172337!important;
-	font-weight:bold;
-    font-size:18px;
-	color: azure;
+	background-color:#172337;
 }
 .stretch-card>.card {
     width: 100%;
@@ -89,27 +82,13 @@ color: azure;
     text-align: center;
 }
 
-.form-group{
-float:right;	
- width:90%;
- height:40vh;
- border: 1px solid #fff;
-box-shadow: 0px 10px 60px 0px rgb(39 39 52 / 6%); 
-}
-input#text-area{
-	padding:8px 10px;
-	width:60%!important;
-	border:100px radius:green!important;
-	box-shadow:0px 10px 60px 0px rgb(39 39 52 / 6%);
-}
-
 .fa-star{
 	font-size:20px !important;
 }
 a:hover;{
 }
 .btn-outline-light:hover {
-	background-color: #172337!important;
+	background-color: #fff!important;
 }
 
 .navbar {
@@ -143,7 +122,11 @@ a:hover;{
   text-align: center;
   text-decoration: none!impo;
   padding-left: 17px;
-}	
+}
+.navbar{
+	box-shadow: 0 2px 20px 0 rgb(0 0 0 / 47%);
+}
+	
 .dropdown {
   float: left;
   overflow: hidden;
@@ -171,8 +154,23 @@ a:hover{
 }
 ul{
     list-style: none;
+	
 }
-
+.small_img{
+	border:solid 3px #f0f0f0;
+    width:80px;
+	padding:4px;
+	margin:3px;
+	background-color:#fff;
+}
+.small_img:hover{
+	border:solid 1px #f0f0f0;
+    width:80px;
+	padding:4px;
+	margin:3px;
+	background-color:#e0e0e0!important;
+}
+/*end jquery-zoom slider */
 img:hover{
     filter: brightness(110%);
 	
@@ -614,7 +612,6 @@ ul:not(.u-unstyled)
  }	  
 	 
  #head h3{ 
-	 font-family: Arial,sans-serif; 
 	 font-size: 14px; 
      color: #b2b2b2; 
      font-weight: 400; 
@@ -688,7 +685,7 @@ ul:not(.u-unstyled)
     -webkit-transform: scale(1.25, 1.25);
     transform: scale(1.25, 1.25)
 }
-
+/* start-footer*/
 footer.bg-success {
     background-color:#172337!important;
 }
@@ -915,4 +912,11 @@ ul li{
 
 .form-dark .modal-header {
     border-bottom: none;
+}
+#leftwards.leftwards{
+	width:500px;
+	height:300px;
+	margin-top:60px;
+	color:#fff;
+	background-color:#000;
 }
