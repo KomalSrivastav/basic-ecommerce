@@ -3,18 +3,14 @@
 <head>
 <meta https-equiv="cache-control" content="no-cache" />
 <link rel="icon" href="images/favicon.icon.png" type="image/ico">
-  <title>basic ecommerce</title>
+  <title>e-commerce-shop</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
-   <link rel="stylesheet" href="css/nicepage.css" media="screen">
    <link rel="stylesheet" href="css/transition.css" media="screen">
-  
-  
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easyzoom@2.5.3/css/easyzoom.css" />
-<script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.3/src/easyzoom.js"></script>
-   <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+   <link rel="stylesheet" href="css/easyzoom.css"/>
+<script src="js/easyzoom.js"></script>
    
  
    
@@ -31,69 +27,74 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href=""><img src="images/logo-dark3.png"  ></a>
+    <a class="navbar-brand" href=""><img src="images/logo-dark3.png" class="img-fluid"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">Home</a>
+          <a class="nav-link text-light" aria-current="page" href="">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="product-details.html">Mobile</a>
+          <a class="nav-link text-light" href="product-details.html">Mobile</a>
         </li>
-        <li class="nav-item active">
-         <a class="nav-link" href="#">Fashion</a>
-         
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Fashion
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
         </li>
-		 <li class="nav-item active">
-         <a class="nav-link" href="#">Electronics</a>
-         
-        </li>
-		 <li class="nav-item active">
-         <a class="nav-link" href="contact.html">Contact Us</a>
-         
-        </li>
-		
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">Electronics</a>
+		<li class="nav-item">
+          <a class="nav-link text-light" href="contact.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+        </li>		
       </ul>
-	 
-      <form class="d-flex">
-        <input style="margin-left:10px;margin-right:10px;width:470px;" class="form-control col-lg-8" type="search" placeholder="Search ..." aria-label="Search">
-		
-          <button type="button" class="btn btn-outline-light"><i class="fa fa-search ">&nbsp;</i></button>     
-      </form>
-	  <div>
-	  <a class="btn btn-floating-light btn-floating ">
-	  <span class="fa-fa-user fa-lg text-light">
-	  <h6 id="cont" "class="mb-2">Sign in 
-	 
 	  
-               </span>
-			  </h6>
-			  
-			 	</a>
-
-
-
-			   <span class="fa-fa-heart fa-lg text-light"><i class="fa fa-heart">&nbsp;</i>
-               </span>
-                 
-			   <span class="fa-fa-lock fa-lg text-light"><i class="fa fa-lock">&nbsp;</i>
-               </span>
-			   <span class="fa-fa-shopping-cart fa-lg text-light"><i class="fa fa-shopping-cart">&nbsp;</i>
-               </span>
-			   
-			   </div>
-			   <div id="cont"> 
-			   <a href="#">
-			   </a>
-			</div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-light" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+	  <button type="button text-light" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Sign in</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign In
+</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Your Email *</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Your Password *</label>
+             <input type="password" class="form-control" id="password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Login</button>
+        <button type="button" class="btn btn-dark">Sign Up</button>
+      </div>
     </div>
   </div>
-</nav>		
+</div>
+    </div>
+  </div>
+</nav>
+</nav>
 
 	    <div class="page-content page-container-fluid" id="page-content">
     <div class="padding">
@@ -101,7 +102,7 @@
 		<div class="col-lg-2">
 	     <div id="">  
 			<ul id="product-caption-slider">
-			<li data-target="images/iphone-11-128-a-mwm32hn-a-apple-0-original-imafkg25hjmuy98e.jpeg"><img src="images/iphone-11-128-a-mwm32hn-a-apple-0-original-imafkg25hjmuy98e.jpeg" class="small_img"style="width:70px; height:70px;" ></li>
+			<li data-target="images/41f8eOJLsPL.__AC_SY200_.jpg"><img src="images/41f8eOJLsPL.__AC_SY200_.jpg" class="small_img"style="width:70px; height:70px;" ></li>
 			<li data-target="images/gionee_s11_gylite.jpg"><img src="images/gionee_s11_gylite.jpg" class="small_img"style="width:70px; height:70px;"></li>
 			<li data-target="images/a53s-5g-cph2321-oppo-original-imag2gwzmunrmur8.jpeg"><img src="images/a53s-5g-cph2321-oppo-original-imag2gwzmunrmur8.jpeg" class="small_img"style="width:70px; height:70px;"></li>
 			<li data-target="images/shopping.jpg">
@@ -113,7 +114,7 @@
                     
                   <div class="easyzoom easyzoom--adjacent">
 					<a href="images/2_zoom.jpg" id="zoom-anchor">
-						<img  id="zoom-image" src="images/2_standard.jpg" alt="" width="310" height="400" />
+						<img  id="zoom-image" src="images/flipkart-smartbuy-gbmvf7441-original-imafkfgfhtypjuzf.jpeg" alt="" width="310" height="400" />
 					</a>
 </div>
  </div>				 
@@ -164,7 +165,7 @@
  
   <div class="correct-wrapper item-wrapper">
             <div class="correct-item item">
-			<img src="images/harrison-2-seater_600x600.png">
+			<img src="images/Artboard_3_QC2_1x._SY116_CB667322885_.jpg">
             
         </div> 
         </div>
@@ -199,7 +200,7 @@
  <li class="bx-container">
  <div class="correct-wrapper item-wrapper">
             <div class="correct-item item">
-<img width="450" height="150"src="images/marker-boss-chair.jpg"/> </div>
+<img width="450" height="150"src="images/41f8eOJLsPL.__AC_SY200_.jpg"/> </div>
  
  <div class="hover"> 
                            <p><strong>Office & Boss Chairs</strong></p> 
@@ -255,7 +256,7 @@
  <li class="bx-container"> 
    <div class="correct-wrapper item-wrapper">
             <div class="correct-item item">
-<img src="images/sofa.png"/> </div>
+<img src="images/31fHyB8ZnQL._AA210_.jpg"/> </div>
  <div class="hover"> 
                              <p><strong>Top 20 Inflatable Sofa</strong></p> 
                              <p><small>From ₹1,169</small> 
@@ -288,7 +289,7 @@
  
   <div class="correct-wrapper item-wrapper">
             <div class="correct-item item">
-<img width="1200" height="100"src="images/Furnitures-Solid-Wood-Home-Temple.jpg"/></div>         
+<img width="1200" height="100"src="images/y20g-v2037-vivo-original-imagyyfpcxezbpq3.jpeg"/></div>         
  <div class="hover"> 
                              <p><strong>Home Temples</strong></p> 
                              <p><small>From ₹399</small> 
@@ -320,7 +321,7 @@
  <li class="bx-container"> 
  <div class="correct-wrapper item-wrapper">
  <div class="correct-item item">
-<img width="250" height="150"src="images/aquarium-Mini-fish-tank-water.jpg"/></div> 
+<img width="250" height="150"src="images/82d50d0fd2221dc9.jpg"/></div> 
  
  <div class="hover"> 
                              <p><strong>Aquarium Tank</strong></p> 
@@ -336,7 +337,7 @@
  <li class="bx-container">
  <div class="correct-wrapper item-wrapper">
  <div class="correct-item item">
-<img src="images/Bookshelves.jpg"/></div> 
+<img src="images/y20g-v2037-vivo-original-imagyyfpcxezbpq3.jpeg"/></div> 
  
 
  <div class="hover"> 
