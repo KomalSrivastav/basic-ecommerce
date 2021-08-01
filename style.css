@@ -9,6 +9,23 @@ font-size: 14px !important;
 overflow-x: hidden;
 
 }
+
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}  
+    #exzoom {
+        width: 400px;
+        /*height: 400px;*/
+    }
+    .container { margin: 150px auto; max-width: 960px;}
+    .hidden { display: none; }
+
 button{
 	padding:15px 50px;
 	border:none;

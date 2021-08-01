@@ -56,38 +56,12 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-light" type="submit"><i class="fa fa-search"></i></button>
       </form>
-	  <button type="button text-light" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Sign in</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Sign In
-</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Your Email *</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Your Password *</label>
-             <input type="password" class="form-control" id="password">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Login</button>
-        <button type="button" class="btn btn-dark">Sign Up</button>
-      </div>
-    </div>
-  </div>
-</div>
+	  <a href="signin.html" class="btn btn-dark" data-bs-whatever="@mdo">Sign in</a>
+
     </div>
   </div>
 </nav>
-</nav>
+
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top:10px;">
   <ol class="carousel-indicators">
@@ -249,9 +223,10 @@
  
  <li class="bx-container"> 
  <div class="correct-wrapper item-wrapper">
- <div class="correct-item item">
-<img src="images/00739013_fast-shipping.jpg"/></div> 
- 
+ <div class="correct-item">
+ <a onclick="ImageClick()">
+<img src="images/00739013_fast-shipping.jpg" id="tv_1" ></div> 
+ </a>
 
 
  <div class="hover"> 
@@ -849,7 +824,14 @@ jQuery(document).ready(function() {
   
   
   
- });  
+ }); 
+
+function ImageClick(){
+ alert("hh");
+
+}
+
+ 
 </script>
 </body>
 </html>
