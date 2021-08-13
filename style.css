@@ -3,19 +3,19 @@
     padding: 0;
     margin: 0;
 }
+
 body{	
 font-family: 'Poppins', sans-serif;
 font-size: 14px !important;
 overflow-x: hidden;
+background-color:#c3c9ce!important;
 
 }
-
-.need-help
-{
+.need-help{
     margin-top: 10px;
 }
-.new-account
-{
+{.new-account
+
     display: block;
     margin-top: 10px;
 }  
@@ -101,7 +101,6 @@ background-color:#ff9f00;
 }
 a:hover;{
 }
-
 .shop-add-btn-cont {
     margin-right: 40px;
 	transition:2s!important;
@@ -125,7 +124,6 @@ a:hover;{
 	color:#fff;
 	
 }
-
 .navbar{
 	box-shadow: 0 2px 20px 0 rgb(0 0 0 / 47%);
 }
@@ -194,9 +192,7 @@ img:hover{
 	left: 0px;
   top: 0px;
   z-index: 1;
-  
 }
-
 .bx-wrapper { 
    -moz-box-shadow: none; 
    -webkit-box-shadow: none; 
@@ -242,7 +238,7 @@ img:hover{
      cursor: pointer; 
 	 display: inline-block; 
 	 width:51px!important;
-     border-radius: 0 4px 4px 0!important;	  
+      
  } 
 ul:not(.u-unstyled) 
         { 
@@ -352,6 +348,7 @@ ul:not(.u-unstyled)
 	
 	
  .bx-container { 
+     
      height:450px!important; 
      width:170px!important; 
      overflow: hidden; 
@@ -365,18 +362,19 @@ ul:not(.u-unstyled)
 	 margin-top:-117px; 
 	
  } 
-
-
+#head.bxslider{
+	box-shadow: 0 2px 20px 0 rgb(0 0 0 / 47%);
+}
  #head { 
+ 
 	 padding: 15px 20px; 
-     border-bottom: 1px solid rgba(0,0,0,.1);
 	 margin-top:13px;
      text-align: initial;	 
  }	 
 
  #head h1{ 
 	 
-	  font-size:22px; 
+	  font-size:15px; 
 	  font-weight:500; 
  }	  
 	 
@@ -455,16 +453,10 @@ ul:not(.u-unstyled)
 }
 /* start-footer*/
 footer.bg-success {
-    background-color:#172337!important;
-	border-top: 6px solid #aba7a6;
-
+	 background-color:#172337!important;
+	 margin-top: -200px;
 }
- img.logo-footer {
-    max-width: 50%;
-    margin-top: 0;
-    margin-bottom: 18px;
-}	
- 
+} 
 #Gallery img{
  width:40px!important;
  height:40px!important;
