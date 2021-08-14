@@ -18,7 +18,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/jquery.bxslider.css">
 </head>
+<style type="text/css">
+		.dropdown-large{ padding:1rem; }
 
+		/* ============ desktop view ============ */
+		@media all and (min-width: 992px) {
+			.dropdown-large{min-width:500px;}
+		}	
+		
+#navbar-nava a:hover {
+  background-color: yellow;
+}
+	</style>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
@@ -54,7 +65,52 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-light" type="submit"><i class="fa fa-search"></i></button>
       </form>
-	  <a href="signin.html" class="btn btn-dark" data-bs-whatever="@mdo">Sign in</a>
+	  <div class="collapse navbar-collapse" id="main_nav navbar-nav">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Sign in  </a>
+							<div class="dropdown-menu dropdown-large">
+								<div class="row g-3">
+									<div class="col-6">
+									<a href="/signin" class="title">Sign in</a>
+										<h6 class="title">Title first</h6>
+										<ul class="list-unstyled">
+											<li><a href="#">Submenu item </a></li>
+											<li><a href="#">Submenu item </a></li>
+											<li><a href="#">Submenu item </a></li>
+											<li><a href="#">Submenu item </a></li>
+											<li><a href="#">Submenu item </a></li>
+											<li><a href="#">Submenu item </a></li>
+										</ul>
+									</div><!-- end col-3 -->
+									<div class="col-6">
+										<h6 class="title">Title second</h6>
+										<ul class="list-unstyled">
+											<li><a href="#">Submenu item </a></li>
+											<li><a href="#">Submenu item </a></li>
+											<li><a href="#">Submenu item </a></li>
+											<li><a href="#">Submenu item </a></li>
+											<li><a href="#">Submenu item </a></li>
+										</ul>
+									</div><!-- end col-3 -->
+								</div><!-- end row -->
+							</div> <!-- dropdown-large.// -->
+						</li>
+					
+					
+					</ul>
+					<ul class="navbar-nav ms-auto">
+						
+					
+						<li class="nav-item dropdown">
+						
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+								<li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+							</ul>
+						</li>
+					</ul>
+				</div> <!-- navbar-collapse.// -->
 	   <a href="sign-up.html" class="btn btn-dark" data-bs-whatever="@mdo">sign-up</a>
 
     </div>
@@ -94,7 +150,7 @@
 	 <hr>
   <div class="correct-wrapper item-wrapper">
             <div class="correct-item item">
-			<img src="images/harrison-2-seater_600x600.png">
+			<img width="450" height="150"src="images/jhula.jpg"/>
             
         </div> 
         </div>
@@ -330,7 +386,7 @@
 	 <hr>
   <div class="correct-wrapper item-wrapper">
             <div class="correct-item item">
-			<img src="images/harrison-2-seater_600x600.png">        
+			<img width="450" height="150"src="images/marker-boss-chair.jpg"/> 
         </div> 
         </div>		
  <div class="#"> 
