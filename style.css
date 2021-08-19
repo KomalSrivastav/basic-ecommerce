@@ -8,7 +8,7 @@ body{
 font-family: 'Poppins', sans-serif;
 font-size: 14px !important;
 overflow-x: hidden;
-background-color:#c3c9ce!important;
+background-color:#f3f1f1!important;
 
 }
 #navbar-nava a:hover {
@@ -371,10 +371,12 @@ ul:not(.u-unstyled)
  #head { 
  
 	 padding: 15px 20px; 
-	 margin-top:13px;
+	 margin-top:-60px;
      text-align: initial;	 
  }	 
-
+.bxslider1{
+	margin-top:20px!important;
+}
  #head h1{ 
 	 
 	  font-size:15px; 
